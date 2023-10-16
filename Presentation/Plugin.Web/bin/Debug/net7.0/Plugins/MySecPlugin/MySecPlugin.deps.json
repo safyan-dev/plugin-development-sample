@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "MySecPlugin/1.0.0": {
+        "dependencies": {
+          "Plugin.Services": "1.0.0"
+        },
+        "runtime": {
+          "MySecPlugin.dll": {}
+        }
+      },
+      "Plugin.Services/1.0.0": {
+        "runtime": {
+          "Plugin.Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MySecPlugin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Plugin.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

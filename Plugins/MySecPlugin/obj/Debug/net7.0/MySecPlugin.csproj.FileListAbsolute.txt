@@ -1,0 +1,14 @@
+D:\plugin-project\Presentation\Plugin.Web\Plugins\MySecPlugin\logo.png
+D:\plugin-project\Presentation\Plugin.Web\Plugins\MySecPlugin\MySecPlugin.deps.json
+D:\plugin-project\Presentation\Plugin.Web\Plugins\MySecPlugin\MySecPlugin.dll
+D:\plugin-project\Presentation\Plugin.Web\Plugins\MySecPlugin\MySecPlugin.pdb
+D:\plugin-project\Plugins\MySecPlugin\obj\Debug\net7.0\MySecPlugin.csproj.AssemblyReference.cache
+D:\plugin-project\Plugins\MySecPlugin\obj\Debug\net7.0\MySecPlugin.GeneratedMSBuildEditorConfig.editorconfig
+D:\plugin-project\Plugins\MySecPlugin\obj\Debug\net7.0\MySecPlugin.AssemblyInfoInputs.cache
+D:\plugin-project\Plugins\MySecPlugin\obj\Debug\net7.0\MySecPlugin.AssemblyInfo.cs
+D:\plugin-project\Plugins\MySecPlugin\obj\Debug\net7.0\MySecPlugin.csproj.CoreCompileInputs.cache
+D:\plugin-project\Plugins\MySecPlugin\obj\Debug\net7.0\MySecPlugin.csproj.CopyComplete
+D:\plugin-project\Plugins\MySecPlugin\obj\Debug\net7.0\MySecPlugin.dll
+D:\plugin-project\Plugins\MySecPlugin\obj\Debug\net7.0\refint\MySecPlugin.dll
+D:\plugin-project\Plugins\MySecPlugin\obj\Debug\net7.0\MySecPlugin.pdb
+D:\plugin-project\Plugins\MySecPlugin\obj\Debug\net7.0\ref\MySecPlugin.dll

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{B0A3DE88-63A4-4EED-99F0-6A15F4399551}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{A56056DD-7ABF-4493-8F97-D8DDB197E2ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{73F9DC89-9933-47AD-B79D-CB1383566AC4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Services", "Lib\Plugin.Services\Plugin.Services.csproj", "{773989F2-5EB0-4693-9AE9-021E6E96F7B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.web", "Presentation\Plugin.Web\Plugin.web.csproj", "{5F5E535D-78B8-4E92-9157-29F012220D7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyPlugin", "Plugins\MyPlugin\MyPlugin.csproj", "{1E73C73E-9F6A-4FB7-8EA1-D732DCAE97BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E04A9905-0CCB-4431-A95B-7387918BEEA7}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySecPlugin", "Plugins\MySecPlugin\MySecPlugin.csproj", "{FFFA3166-FD39-4EE0-99F2-2BDFBF021854}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{773989F2-5EB0-4693-9AE9-021E6E96F7B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{773989F2-5EB0-4693-9AE9-021E6E96F7B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{773989F2-5EB0-4693-9AE9-021E6E96F7B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{773989F2-5EB0-4693-9AE9-021E6E96F7B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F5E535D-78B8-4E92-9157-29F012220D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F5E535D-78B8-4E92-9157-29F012220D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F5E535D-78B8-4E92-9157-29F012220D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F5E535D-78B8-4E92-9157-29F012220D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E73C73E-9F6A-4FB7-8EA1-D732DCAE97BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E73C73E-9F6A-4FB7-8EA1-D732DCAE97BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E73C73E-9F6A-4FB7-8EA1-D732DCAE97BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E73C73E-9F6A-4FB7-8EA1-D732DCAE97BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFFA3166-FD39-4EE0-99F2-2BDFBF021854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFFA3166-FD39-4EE0-99F2-2BDFBF021854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFFA3166-FD39-4EE0-99F2-2BDFBF021854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFFA3166-FD39-4EE0-99F2-2BDFBF021854}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{773989F2-5EB0-4693-9AE9-021E6E96F7B5} = {73F9DC89-9933-47AD-B79D-CB1383566AC4}
+		{5F5E535D-78B8-4E92-9157-29F012220D7A} = {A56056DD-7ABF-4493-8F97-D8DDB197E2ED}
+		{1E73C73E-9F6A-4FB7-8EA1-D732DCAE97BD} = {B0A3DE88-63A4-4EED-99F0-6A15F4399551}
+		{FFFA3166-FD39-4EE0-99F2-2BDFBF021854} = {B0A3DE88-63A4-4EED-99F0-6A15F4399551}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D079B5ED-1EDF-41F5-B12D-E95E9BB7B9CA}
+	EndGlobalSection
+EndGlobal

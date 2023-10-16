@@ -1,0 +1,29 @@
+﻿@model MyPlugin.Models.ConfigureViewModel
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<h1>Welcome to the Plugin Configuration Page</h1>
+
+<form id="configureForm" method="post" enctype="multipart/form-data">
+    <button type="submit">Click Me</button>
+</form>
+
+<div id="message">
+    @Model.Message
+</div>
+
+<script type="text/javascript">
+    $("#configureForm").submit(function (event) {
+        event.preventDefault();
+        $.ajax({
+            url: "@Url.Action("Configure", "MyPlugin")",
+            type: "POST",
+            data: {
+                CallToMyPlugin: true
+            },
+            success: function (data) {
+                $("#message").text(data.message);
+            }
+        });
+    });
+</script>

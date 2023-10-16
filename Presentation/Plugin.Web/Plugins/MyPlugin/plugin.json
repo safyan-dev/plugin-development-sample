@@ -1,0 +1,11 @@
+{
+  "Group": "MyPlugins",
+  "FriendlyName": "Web My Plugin",
+  "SystemName": "MyPlugins.WebApi.Frontend",
+  "Version": "4.70.1",
+  "SupportedVersions": [ "4.70" ],
+  "Author": "safyan",
+  "DisplayOrder": 1,
+  "FileName": "MyPlugin.dll",
+  "Description": "my plugin"
+}

@@ -1,0 +1,77 @@
+﻿@using Plugin.Services.Plugins;
+@{
+    ViewData["Title"] = "Home Page";
+    var pluginModel = (PluginViewModel)ViewBag.plugins;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Installed Plugins</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Plugin</th>
+                <th scope="col">Plugin Name</th>
+                <th scope="col">Last Updated</th>
+                <th scope="col">Configure</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var installedIndex = 1;
+                foreach (var plugin in pluginModel.InstalledPlugins)
+                {
+                    <tr>
+                        <th scope="row">@installedIndex</th>
+                        <th><img src="../Plugins/@plugin.PluginLogo" width="50" height="50" /></th>
+                        <td>@plugin.Name</td>
+                        <td>@plugin.LastUpdated</td>
+                        <td>
+                            <a href="@Url.Action("UnInstall", "Home")" class="btn btn-primary">Uninstall</a>
+                            @{
+                                if (plugin.IsInstalled)
+                                {
+                                    <a href="@Url.Action("Configure", "MyPlugin", new {pluginName = plugin.Name})" class="btn btn-primary">Configure</a>
+                                }
+                            }
+                        </td>
+                    </tr>
+                    installedIndex++;
+                }
+            }
+        </tbody>
+    </table>
+
+    <h1 class="display-4">UnInstalled Plugins</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Plugin</th>
+                <th scope="col">Plugin Name</th>
+                <th scope="col">Last Updated</th>
+                <th scope="col">Configure</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var unInstalledIndex = 1;
+                foreach (var plugin in pluginModel.UninstalledPlugins)
+                {
+                    <tr>
+                        <th scope="row">@unInstalledIndex</th>
+                        <th><img src="../Plugins/@plugin.PluginLogo" width="50" height="50" /></th>
+                        <td>@plugin.Name</td>
+                        <td>@plugin.LastUpdated</td>
+                        <td>
+                            <a href="@Url.Action("Install", "Home", new {pluginName = plugin.Name})" class="btn btn-primary">Install</a>
+                        </td>
+                    </tr>
+                    unInstalledIndex++;
+                }
+            }
+        </tbody>
+    </table>
+</div>
